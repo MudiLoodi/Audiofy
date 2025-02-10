@@ -11,7 +11,7 @@ A simple desktop application that converts PDF documents to audiobooks using Tex
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/MudiLoodi/Audiofy
 cd Audiofy
 ```
 
