@@ -14,6 +14,10 @@ A simple desktop application that converts PDF documents to audiobooks using Tex
 git clone https://github.com/MudiLoodi/Audiofy
 cd Audiofy
 ```
+- If on Windows:
+   * Double-click run_audiofy.bat
+   * Wait for initial setup to complete
+   * Use the application
 
 2. Create a virtual environment (recommended):
 ```bash
