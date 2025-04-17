@@ -1,6 +1,5 @@
 """
-GUI implementation for the Audiofy application.
-Provides a user-friendly interface for PDF to audio conversion.
+GUI implementation.
 """
 
 import os
@@ -32,12 +31,12 @@ class AudioBookApp(ctk.CTk):
 
     def create_widgets(self):
         """Create and initialize all UI widgets."""
-        self._create_main_frame()
-        self._create_title()
-        self._create_file_selection()
-        self._create_output_entry()
-        self._create_convert_button()
-        self._create_status_label()
+        self.create_main_frame()
+        self.create_title()
+        self.create_file_selection()
+        self.create_output_entry()
+        self.create_convert_button()
+        self.create_status_label()
 
     def create_main_frame(self):
         """Create the main container frame for all widgets."""

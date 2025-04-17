@@ -57,7 +57,7 @@ class AudioConverter:
         tts.to(self.device)
         
         if self.file.endswith(".pdf"):
-            text = self._clean_text(self._extract_text())
+            text = self.clean_text(self.extract_text())
         else:
             text = self.file
             
