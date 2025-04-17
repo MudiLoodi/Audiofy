@@ -1,6 +1,5 @@
 """
-Global configuration settings for the Audiofy application.
-Contains all constants used throughout the application for consistent styling and behavior.
+Global configuration and constants.
 """
 
 # TTS Model configurations
