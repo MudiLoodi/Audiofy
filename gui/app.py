@@ -39,13 +39,13 @@ class AudioBookApp(ctk.CTk):
         self._create_convert_button()
         self._create_status_label()
 
-    def _create_main_frame(self):
+    def create_main_frame(self):
         """Create the main container frame for all widgets."""
         self.main_frame = ctk.CTkFrame(self, corner_radius=10)
         self.main_frame.grid(row=0, column=0, padx=PADDING, pady=PADDING, sticky="nsew")
         self.main_frame.grid_columnconfigure(0, weight=1)
 
-    def _create_title(self):
+    def create_title(self):
         """Create the application title label."""
         self.label_title = ctk.CTkLabel(
             self.main_frame, 
@@ -55,7 +55,7 @@ class AudioBookApp(ctk.CTk):
         )
         self.label_title.grid(row=0, column=0, pady=PADDING, sticky="n")
 
-    def _create_file_selection(self):
+    def create_file_selection(self):
         """Create file selection button and selected file label."""
         self.button_select_file = ctk.CTkButton(
             self.main_frame, 
@@ -73,7 +73,7 @@ class AudioBookApp(ctk.CTk):
         )
         self.label_file.grid(row=2, column=0, pady=5, sticky="n")
 
-    def _create_output_entry(self):
+    def create_output_entry(self):
         """Create entry field for output filename."""
         self.entry_output_name = ctk.CTkEntry(
             self.main_frame, 
@@ -84,7 +84,7 @@ class AudioBookApp(ctk.CTk):
         )
         self.entry_output_name.grid(row=3, column=0, pady=PADDING, sticky="n")
 
-    def _create_convert_button(self):
+    def create_convert_button(self):
         """Create the main conversion action button."""
         self.button_convert = ctk.CTkButton(
             self.main_frame, 
@@ -97,7 +97,7 @@ class AudioBookApp(ctk.CTk):
         )
         self.button_convert.grid(row=6, column=0, pady=30, sticky="ew", padx=50)
 
-    def _create_status_label(self):
+    def create_status_label(self):
         """Create label for displaying conversion status and errors."""
         self.label_status = ctk.CTkLabel(
             self.main_frame, 
