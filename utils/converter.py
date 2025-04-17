@@ -23,7 +23,7 @@ class AudioConverter:
         self.model = model
         self.device = device
 
-    def _extract_text(self):
+    def extract_text(self):
         """
         Extracts text from PDF file.
         
@@ -33,7 +33,7 @@ class AudioConverter:
         reader = PdfReader(self.file)
         return "".join(page.extract_text() for page in reader.pages)
 
-    def _clean_text(self, text):
+    def clean_text(self, text):
         """
         Removes special characters that might interfere with TTS.
         
