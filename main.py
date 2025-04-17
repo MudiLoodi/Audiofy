@@ -1,8 +1,3 @@
-"""
-Entry point for the Audiofy application.
-Initializes the GUI and starts the main event loop.
-"""
-
 import customtkinter as ctk
 from gui.app import AudioBookApp
 
